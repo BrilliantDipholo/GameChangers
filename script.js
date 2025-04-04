@@ -82,7 +82,7 @@ function getRandomImage() {
 function renderImage() {
     const num = getRandomImage();
     // renderMultipleChoice(num);
-    document.getElementById("image").src = `GameChangers/${allGameChangers[num].surname}.jpeg`;
+    document.getElementById("image").src = `Gamechangers/${allGameChangers[num].surname}.jpeg`;
 }
 function getCourses(element){
     let randomPosition=Math.floor(Math.random() * 8) + 1;
