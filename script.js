@@ -102,13 +102,6 @@ function getCourses(element){
                 option.value=`${allGameChangers[el].course}`;
                 document.getElementById("personcourse").append(option);
             }
-            // else{
-            //     el--;
-            //     const option=document.createElement("option");
-            //     option.textContent=`${allGameChangers[el].course}`;
-            //     option.value=`${allGameChangers[el].course}`;
-            //     document.getElementById("personcourse").append(option);
-            // }
         }
     }
 }
@@ -124,11 +117,6 @@ function getPlaces(element){
             if(el!==element){
                 document.getElementById('personplace').innerHTML+=`<option value="${allGameChangers[el].place}">${allGameChangers[el].place}</option>`;
             }
-                // }
-            // else{
-            //     el-=2;
-            //     document.getElementById('personplace').innerHTML+=`<option value="${allGameChangers[el].place}">${allGameChangers[el].place}</option>`
-            // }
         }
     }
 }
@@ -193,7 +181,7 @@ document.getElementById("nextPhoto").onclick = function () {
         correctRempies.push(num);
     }
     if (count < 4) {
-        document.getElementById("photo").src = `GameChangers/${allGameChangers[num].surname}.jpeg`;
+        document.getElementById("image").src = `Gamechangers/${allGameChangers[num].surname}.jpeg`;
         count++;
     }
     if(count===4){
@@ -333,5 +321,5 @@ document.getElementById("start-quiz").onclick = function () {
     document.getElementById("fill-quiz").classList.remove("hide");
     document.getElementById("quiz-choosing").classList.add("hide");
     document.getElementById("displayMarks").textContent=`Total:${totalMark}`;
-    document.getElementById("photo").src = `GameChangers/${allGameChangers[number2].surname}.jpeg`;
+    document.getElementById("image").src = `Gamechangers/${allGameChangers[number2].surname}.jpeg`;
 };
