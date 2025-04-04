@@ -1,0 +1,5 @@
+Junior-Gauteng,Pretoria
+Mavela-Mpumalanga,Nkomazi
+Daniel-Gauteng,Johannesburg
+Sifundo-KZN,Nongoma
+Smangaliso-Limpopo,Mokopane
